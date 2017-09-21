@@ -5,6 +5,7 @@ bindable: False
 async: optional
 metadata:
   displayName: Hastebin (APB)
+  dependencies: ['docker.io/dymurray/hastebin:latest', 'docker.io/modularitycontainers/memcached:latest']
 plans:
   - name: default
     description: This default plan deploys hastebin-apb
