@@ -12,7 +12,7 @@
     dest: /tmp/config.js
 
 - name: Create hastebin configmap
-  shell: oc create configmap haste-config --from-file=haste-config=/tmp/config.js
+  shell: oc create configmap haste-config --from-file=haste-config=/tmp/config.js -n '{{ namespace }}'
 
 ##############################################################################
 ## An OpenShift Origin deployment configuration provides a replication
